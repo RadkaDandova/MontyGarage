@@ -798,119 +798,104 @@ img {
         border-right: 0;
         background: var(--red)
     }
-    /* Fotografie v kartách Motorky a Automobily */
-}
+  /* ===========================
+   KARTY SLUŽEB
+=========================== */
+
 .service-card {
     display: grid;
-    grid-template-columns: 42% 58%;
-    min-height: 430px;
+    align-items: stretch;
+    min-height: 520px;
     overflow: hidden;
+    border-radius: 10px;
+    background: #101216;
 }
 
-.service-card.audi-card {
-    grid-template-columns: 58% 42%;
+/* Motorka vlevo - text vpravo */
+.beta-card {
+    grid-template-columns: 35% 65%;
+}
+
+/* Auto vlevo text - vpravo fotka */
+.audi-card {
+    grid-template-columns: 65% 35%;
 }
 
 .service-image {
-    width: 100%;
-    height: 100%;
-    min-height: 430px;
     overflow: hidden;
+    height: 100%;
 }
 
 .service-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
 }
 
-/* Motorka vlevo, text vpravo */
+/* Motorka vlevo */
 .beta-card .service-image {
     grid-column: 1;
-    grid-row: 1;
 }
 
 .beta-card .service-content {
     grid-column: 2;
-    grid-row: 1;
 }
 
-/* Auto vpravo, text vlevo */
-.audi-card .service-image {
-    grid-column: 2;
-    grid-row: 1;
-}
-
+/* Auto vpravo */
 .audi-card .service-content {
     grid-column: 1;
-    grid-row: 1;
-}
-
-/* Jemné zatmavení směrem k textu */
-.beta-card .service-image {
-    position: relative;
-}
-
-.beta-card .service-image::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(7, 8, 10, 0) 55%,
-        rgba(7, 8, 10, 0.75) 100%
-    );
-    pointer-events: none;
 }
 
 .audi-card .service-image {
-    position: relative;
+    grid-column: 2;
 }
 
-.audi-card .service-image::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        270deg,
-        rgba(7, 8, 10, 0) 55%,
-        rgba(7, 8, 10, 0.75) 100%
-    );
-    pointer-events: none;
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 38px;
+}
+
+.service-content h3 {
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.service-content li {
+    margin: 10px 0;
 }
 
 /* Mobil */
-@media (max-width: 760px) {
-    .service-card,
-    .service-card.audi-card {
-        grid-template-columns: 1fr;
+
+@media (max-width:760px){
+
+    .beta-card,
+    .audi-card{
+        grid-template-columns:1fr;
+    }
+
+    .service-image{
+        height:300px;
     }
 
     .beta-card .service-image,
     .beta-card .service-content,
     .audi-card .service-image,
-    .audi-card .service-content {
-        grid-column: 1;
+    .audi-card .service-content{
+        grid-column:1;
     }
 
     .beta-card .service-image,
-    .audi-card .service-image {
-        grid-row: 1;
-        min-height: 260px;
+    .audi-card .service-image{
+        grid-row:1;
     }
 
     .beta-card .service-content,
-    .audi-card .service-content {
-        grid-row: 2;
+    .audi-card .service-content{
+        grid-row:2;
     }
 
-    .beta-card .service-image::after,
-    .audi-card .service-image::after {
-        background: linear-gradient(
-            0deg,
-            rgba(7, 8, 10, 0.75) 0%,
-            rgba(7, 8, 10, 0) 50%
-        );
-    }
+}
 }
