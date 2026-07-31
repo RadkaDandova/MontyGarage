@@ -633,24 +633,6 @@ img {
         grid-column: 1/-1
     }
 
-    .service-card,
-    .service-card.audi-card {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
-
-    .beta-card .service-image,
-    .audi-card .service-image {
-        grid-column: 1;
-        grid-row: 1;
-        height: 300px;
-    }
-
-    .beta-card .service-content,
-    .audi-card .service-content {
-        grid-column: 1;
-        grid-row: 2;
-    }
 
     .work-grid {
         grid-template-columns: repeat(2, 1fr)
