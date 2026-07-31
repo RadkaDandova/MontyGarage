@@ -485,6 +485,11 @@ img {
     border-radius: 8px
 }
 
+.form-box {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .review-card {
     margin-top: 20px;
     padding: 24px;
