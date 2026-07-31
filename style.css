@@ -479,15 +479,11 @@ img {
 
 .review-box,
 .form-box {
+    width: 100%;
     border: 1px solid var(--line);
     background: var(--panel);
     padding: 28px;
     border-radius: 8px
-}
-
-.form-box {
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 .review-card {
