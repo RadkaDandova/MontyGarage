@@ -236,7 +236,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 55% center;
+    object-position: 45% center;
     transform: scale(1.01)
 }
 
