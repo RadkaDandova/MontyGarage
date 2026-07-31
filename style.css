@@ -799,7 +799,7 @@ img {
         background: var(--red)
     }
     /* Fotografie v kartách Motorky a Automobily */
-
+}
 .service-card {
     display: grid;
     grid-template-columns: 42% 58%;
