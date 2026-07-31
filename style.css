@@ -337,12 +337,12 @@ img {
 
 /* Motorka: fotografie vlevo, text vpravo */
 .beta-card {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
 }
 
 /* Automobily: text vlevo, fotografie vpravo */
 .audi-card {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
 }
 
 .service-image {
@@ -357,12 +357,18 @@ img {
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center;
+    transition: transform .35s ease;
 }
 
+/* Motorka */
 .beta-card .service-image {
     grid-column: 1;
     grid-row: 1;
+}
+
+.beta-card .service-image img {
+    object-position: 60% center;
+    transform: scale(1.08);
 }
 
 .beta-card .service-content {
@@ -370,6 +376,7 @@ img {
     grid-row: 1;
 }
 
+/* Automobily */
 .audi-card .service-content {
     grid-column: 1;
     grid-row: 1;
@@ -378,6 +385,11 @@ img {
 .audi-card .service-image {
     grid-column: 2;
     grid-row: 1;
+}
+
+.audi-card .service-image img {
+    object-position: 42% center;
+    transform: scale(1.08);
 }
 
 .service-content {
