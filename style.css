@@ -809,35 +809,37 @@ img {
     }
 
     .service-cards,
-    .split-section,
-    .contact-section {
-        grid-template-columns: 1fr;
-    }
+.split-section,
+.contact-section {
+    grid-template-columns: 1fr;
+}
 
-    /* Mobilní zobrazení sekce Co umíme */
-    .service-card,
-    .beta-card,
-    .audi-card {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
+/* Mobilní zobrazení sekce Co umíme */
+.service-card,
+.beta-card,
+.audi-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: auto;
+}
 
-    .beta-card .service-image,
-    .audi-card .service-image {
-        grid-column: 1;
-        grid-row: 1;
-        height: 260px;
-    }
+.beta-card .service-content,
+.audi-card .service-content {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 24px 20px;
+}
 
-    .beta-card .service-content,
-    .audi-card .service-content {
-        grid-column: 1;
-        grid-row: 2;
-    }
+.beta-card .service-image,
+.audi-card .service-image {
+    grid-column: 1;
+    grid-row: 2;
+    height: 260px;
+}
 
-    .service-content {
-        padding: 24px 20px;
-    }
+.service-content {
+    padding: 24px 20px;
+}
 
     .service-content h3 {
         font-size: 1.7rem;
