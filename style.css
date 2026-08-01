@@ -413,7 +413,7 @@ img {
 .beta-card .service-image::after {
     background: linear-gradient(
         to right,
-        transparent 95%,
+        transparent 90%,
         #111318 100%
     );
 }
@@ -421,7 +421,7 @@ img {
 .audi-card .service-image::after {
     background: linear-gradient(
         to left,
-        transparent 95%,
+        transparent 90%,
         #111318 100%
     );
 }
@@ -651,7 +651,8 @@ img {
     display: none
 }
 
-/* Menší mezery mezi sekcemi Co umíme, Naše práce a Poptávka */
+
+/* Menší mezery mezi sekcemi */
 #sluzby {
     padding-bottom: 40px;
 }
@@ -809,36 +810,48 @@ img {
     }
 
     .service-cards,
-.split-section,
-.contact-section {
-    grid-template-columns: 1fr;
-}
-
-/* Mobilní zobrazení sekce Co umíme */
-.service-card {
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-}
-
-.service-content {
-    order: 1;
-    padding: 24px 20px;
-}
-
-.service-image {
-    order: 2;
-    height: 260px;
-}
-
-    .service-content h3 {
-        font-size: 1.7rem;
-        margin-bottom: 16px;
+    .split-section,
+    .contact-section {
+        grid-template-columns: 1fr;
     }
 
-    .service-content li {
-        margin: 8px 0;
+    /* Mobil: nejdřív nadpis a seznam, fotografie až pod nimi */
+    .service-card,
+    .beta-card,
+    .audi-card {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: auto;
     }
+
+    .beta-card .service-content,
+    .audi-card .service-content,
+    .service-content {
+        order: 1 !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    .beta-card .service-image,
+    .audi-card .service-image,
+    .service-image {
+        order: 2 !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        height: 230px;
+    }
+
+    /* Menší mapa na mobilu */
+    .map-card,
+    .map-card iframe {
+        height: 125px;
+        min-height: 125px;
+    }
+
+
 
     .work-grid {
         display: flex;
