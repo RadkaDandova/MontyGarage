@@ -871,4 +871,17 @@ img {
     color: #fff;
     font-weight: 600;
 }
+    /* Menší mezera mezi Co umíme, Naše práce a Poptávkou */
+#sluzby {
+    padding-bottom: 40px;
+}
+
+#prace {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#poptavka {
+    padding-top: 40px;
+}
 }
