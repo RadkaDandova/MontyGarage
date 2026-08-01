@@ -840,4 +840,8 @@ img {
     color: #fff;
     font-weight: 600;
 }
+
+    #sluzby {
+    max-width: calc(var(--max) + 44px);
+}
 }
