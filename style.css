@@ -606,7 +606,7 @@ img {
 }
 
 .map-card {
-    height: 170px;
+    height: 320px;
     border: 1px solid #30343b;
     border-radius: 6px;
     overflow: hidden;
@@ -865,14 +865,21 @@ img {
 
     .work-grid {
         display: flex;
+        align-items: flex-start;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        padding-bottom: 12px
+        padding-bottom: 12px;
     }
 
     .work-card {
+        display: flex;
+        flex: 0 0 78vw;
+        flex-direction: column;
+        width: 78vw;
         min-width: 78vw;
-        scroll-snap-align: start
+        height: auto;
+        align-self: flex-start;
+        scroll-snap-align: start;
     }
 
     .form-row {
@@ -930,14 +937,21 @@ img {
 
     /* Mobil: galerie Naše práce */
     .work-card img {
+        flex: 0 0 280px;
+        width: 100%;
         height: 280px;
         object-fit: cover;
         object-position: center;
+        transform: none;
+    }
+
+    .work-card strong {
+        flex: 0 0 auto;
+        margin: 0;
     }
 
     .work-card:first-child img {
         object-position: center center;
-        transform: none;
     }
 
     /* Mobil: menší mapa */
