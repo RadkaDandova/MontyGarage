@@ -346,12 +346,12 @@ img {
 
 /* Motorka: fotografie vlevo, text vpravo */
 .beta-card {
-    grid-template-columns: 42% 58%;
+    grid-template-columns: 46% 54%;
 }
 
 /* Automobily: text vlevo, fotografie vpravo */
 .audi-card {
-    grid-template-columns: 58% 42%;
+    grid-template-columns: 54% 46%;
 }
 
 .service-image {
