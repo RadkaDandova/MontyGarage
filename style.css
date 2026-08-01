@@ -580,6 +580,10 @@ img {
     border-radius: 8px
 }
 
+.contact-section > div:first-child {
+    align-self: center;
+}
+
 .contact-section address {
     display: grid;
     gap: 10px;
