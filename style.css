@@ -651,6 +651,20 @@ img {
     display: none
 }
 
+/* Menší mezery mezi sekcemi Co umíme, Naše práce a Poptávka */
+#sluzby {
+    padding-bottom: 40px;
+}
+
+#prace {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#poptavka {
+    padding-top: 40px;
+}
+
 @media (max-width:1000px) {
     .header-contact span {
         display: none
@@ -797,15 +811,41 @@ img {
     .service-cards,
     .split-section,
     .contact-section {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
-    .service-image {
+    /* Mobilní zobrazení sekce Co umíme */
+    .service-card,
+    .beta-card,
+    .audi-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .beta-card .service-image,
+    .audi-card .service-image {
+        grid-column: 1;
+        grid-row: 1;
         height: 260px;
     }
 
+    .beta-card .service-content,
+    .audi-card .service-content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
     .service-content {
-        padding: 26px;
+        padding: 24px 20px;
+    }
+
+    .service-content h3 {
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+
+    .service-content li {
+        margin: 8px 0;
     }
 
     .work-grid {
@@ -870,18 +910,5 @@ img {
     font-size: 0.95em;
     color: #fff;
     font-weight: 600;
-}
-    /* Menší mezera mezi Co umíme, Naše práce a Poptávkou */
-#sluzby {
-    padding-bottom: 40px;
-}
-
-#prace {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-#poptavka {
-    padding-top: 40px;
 }
 }
