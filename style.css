@@ -830,4 +830,11 @@ img {
         border-right: 0;
         background: var(--red)
     }
+    .hero-location {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: var(--red);
+    font-weight: 600;
+}
 }
