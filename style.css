@@ -172,9 +172,12 @@ img {
 }
 
 .hero-subtitle span {
-    color: var(--red)
+    color: var(--red);
 }
 
+.hero-location {
+    color: #fff !important;
+}
 .hero-actions {
     display: flex;
     gap: 14px;
