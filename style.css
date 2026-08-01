@@ -355,6 +355,7 @@ img {
 }
 
 .service-image {
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -367,6 +368,13 @@ img {
     display: block;
     object-fit: cover;
     transition: transform .35s ease;
+}
+
+.service-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 }
 
 /* Motorka */
@@ -399,6 +407,23 @@ img {
 .audi-card .service-image img {
     object-position: 42% center;
     transform: scale(1.08);
+}
+
+/* Přechod fotografie do textu */
+.beta-card .service-image::after {
+    background: linear-gradient(
+        to right,
+        transparent 85%,
+        #111318 100%
+    );
+}
+
+.audi-card .service-image::after {
+    background: linear-gradient(
+        to left,
+        transparent 85%,
+        #111318 100%
+    );
 }
 
 .service-content {
