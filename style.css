@@ -815,30 +815,20 @@ img {
 }
 
 /* Mobilní zobrazení sekce Co umíme */
-.service-card,
-.beta-card,
-.audi-card {
-    display: grid;
-    grid-template-columns: 1fr;
+.service-card {
+    display: flex;
+    flex-direction: column;
     min-height: auto;
 }
 
-.beta-card .service-content,
-.audi-card .service-content {
-    grid-column: 1;
-    grid-row: 1;
-    padding: 24px 20px;
-}
-
-.beta-card .service-image,
-.audi-card .service-image {
-    grid-column: 1;
-    grid-row: 2;
-    height: 260px;
-}
-
 .service-content {
+    order: 1;
     padding: 24px 20px;
+}
+
+.service-image {
+    order: 2;
+    height: 260px;
 }
 
     .service-content h3 {
