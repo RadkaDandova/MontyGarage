@@ -568,7 +568,7 @@ img {
 }
 
 .map-card {
-    height: 210px;
+    height: 170px;
     border: 1px solid #30343b;
     border-radius: 6px;
     overflow: hidden;
@@ -576,11 +576,10 @@ img {
 
 .map-card iframe {
     width: 100%;
-    height: 210px;
+    height: 170px;
     border: 0;
     display: block;
 }
-
 .contact-brand {
     display: flex;
     flex-direction: column;
