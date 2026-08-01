@@ -844,4 +844,8 @@ img {
     #sluzby {
     max-width: calc(var(--max) + 44px);
 }
+    #sluzby .service-cards {
+    max-width: var(--max);
+    margin: 0 auto;
+}
 }
