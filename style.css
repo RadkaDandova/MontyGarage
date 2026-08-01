@@ -413,7 +413,7 @@ img {
 .beta-card .service-image::after {
     background: linear-gradient(
         to right,
-        transparent 60%,
+        transparent 75%,
         #111318 100%
     );
 }
@@ -421,7 +421,7 @@ img {
 .audi-card .service-image::after {
     background: linear-gradient(
         to left,
-        transparent 60%,
+        transparent 75%,
         #111318 100%
     );
 }
