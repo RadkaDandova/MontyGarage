@@ -289,6 +289,11 @@ img {
     padding: 78px 22px
 }
 
+/* Zarovnání sekce Služby se sekcí Naše práce */
+#sluzby {
+    max-width: calc(var(--max) + 44px);
+}
+
 .section-dark {
     max-width: none;
     background: #090b0e
@@ -839,19 +844,5 @@ img {
     font-size: 0.95em;
     color: #fff;
     font-weight: 600;
-}
-    #sluzby {
-    max-width: none !important;
-    width: 100% !important;
-    padding-left: 22px;
-    padding-right: 22px;
-}
-
-    #sluzby > .section-heading,
-    #sluzby > .service-cards {
-    width: 100% !important;
-    max-width: var(--max) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
 }
 }
