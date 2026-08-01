@@ -405,7 +405,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 38px;
+    padding: 24px;
 }
 
 .service-content h3 {
