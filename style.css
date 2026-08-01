@@ -841,13 +841,17 @@ img {
     font-weight: 600;
 }
     #sluzby {
-    max-width: none;
+    max-width: none !important;
+    width: 100% !important;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
-    #sluzby .section-heading,
-    #sluzby .service-cards {
-    max-width: var(--max);
-    margin-left: auto;
-    margin-right: auto;
+    #sluzby > .section-heading,
+    #sluzby > .service-cards {
+    width: 100% !important;
+    max-width: var(--max) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 }
