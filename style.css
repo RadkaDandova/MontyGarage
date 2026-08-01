@@ -840,8 +840,14 @@ img {
     color: #fff;
     font-weight: 600;
 }
+    #sluzby {
+    max-width: none;
+}
+
+    #sluzby .section-heading,
     #sluzby .service-cards {
-    width: calc(100% + 44px);
-    margin-left: -22px;
+    max-width: var(--max);
+    margin-left: auto;
+    margin-right: auto;
 }
 }
