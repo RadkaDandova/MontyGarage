@@ -289,10 +289,11 @@ img {
     padding: 78px 22px
 }
 
-/* Zarovnání sekce Služby se sekcí Naše práce */
+/* Zarovnání sekce Co umíme se sekcí Naše práce */
 #sluzby {
     max-width: calc(var(--max) + 44px);
 }
+
 
 .section-dark {
     max-width: none;
