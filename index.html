@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+<head>
+<!-- KÓDOVÁNÍ
+       UTF-8 zajišťuje správné zobrazení českých znaků. Neměnit. -->
+<meta charset="utf-8"/>
+<!-- MOBILNÍ ZOBRAZENÍ
+       Zajišťuje správné měřítko webu na telefonu/tabletu. Neměnit. -->
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO TITLE
+       Hlavní titulek pro Google a název záložky prohlížeče.
+       Při úpravě zachovej hlavní služby + lokalitu + Monty Garage. -->
+<title>Motoservis Příbram | GO motoru, repase tlumičů, MX Enduro | Monty Garage</title>
+<!-- SEO DESCRIPTION
+       Popis výsledku ve vyhledávači. Zde lze měnit hlavní služby
+       a hledané výrazy, ale text má zůstat přirozený a pravdivý. -->
+<meta content="Monty Garage – motoservis Příbram a okolí. GO motoru, generální opravy motorů, repase a servis tlumičů, MX a Enduro servis, centrování kliky, podvozky, pneuservis, diagnostika, odtahy a dovozy." name="description"/>
+<!-- INDEXACE GOOGLE
+       "index, follow" dovoluje Googlu stránku indexovat a procházet odkazy.
+       Neměnit na noindex, jinak by web mohl zmizet z vyhledávání. -->
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<!-- AUTOR / ZNAČKA WEBU -->
+<meta content="Monty Garage" name="author"/>
+<!-- BARVA PROHLÍŽEČE NA NĚKTERÝCH ZAŘÍZENÍCH -->
+<meta content="#08090b" name="theme-color"/>
+<!-- CANONICAL
+       Oficiální hlavní URL této stránky. Neměnit, dokud hlavní doména
+       zůstává https://montygarage.cz/. -->
+<link href="https://montygarage.cz/" rel="canonical"/>
+<!-- FAVICON
+       Malá ikona webu v záložce. Obrázek je ve složce images/. -->
+<link href="images/logo-original.jpg" rel="icon"/>
+<!-- CSS / VZHLED WEBU
+       Veškeré barvy, velikosti, rozložení atd. jsou v style.css.
+       V index.html se vzhled většinou neupravuje. -->
+<link href="style.css" rel="stylesheet"/>
+<!-- =====================================================
+       OPEN GRAPH
+       Náhled odkazu při sdílení webu na sociálních sítích.
+       og:title = název, og:description = popis,
+       og:image = obrázek, og:url = adresa webu.
+       ===================================================== -->
+<meta content="website" property="og:type"/>
+<meta content="cs_CZ" property="og:locale"/>
+<meta content="Monty Garage" property="og:site_name"/>
+<meta content="Motoservis Příbram | GO motoru, repase tlumičů | Monty Garage" property="og:title"/>
+<meta content="Servis motorek, MX a Enduro, GO motorů, repase tlumičů, centrování klikových hřídelí, pneuservis, odtahy a dovozy v okolí Příbrami." property="og:description"/>
+<meta content="https://montygarage.cz/" property="og:url"/>
+<meta content="https://montygarage.cz/images/hero.jpg" property="og:image"/>
+<meta content="Monty Garage – servis motorek Příbram" property="og:image:alt"/>
+<!-- NÁHLED PRO X/TWITTER
+       Stejný princip jako Open Graph. -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Motoservis Příbram | GO motoru a repase tlumičů | Monty Garage" name="twitter:title"/>
+<meta content="Motoservis Příbram: MX a Enduro servis, GO motoru, opravy motorů, repase tlumičů, podvozky, pneuservis a odtahy." name="twitter:description"/>
+<meta content="https://montygarage.cz/images/hero.jpg" name="twitter:image"/>
+<!-- =====================================================
+       STRUKTUROVANÁ DATA / SCHEMA.ORG PRO GOOGLE
+       Google zde dostává strojově čitelné informace o firmě.
+       Při změně telefonu, e-mailu, adresy, sociálních sítí nebo
+       hlavního zaměření firmy uprav stejné údaje také zde.
+       ===================================================== -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MotorcycleRepair", "LocalBusiness"],
+    "@id": "https://montygarage.cz/#business",
+    "name": "Monty Garage",
+    "url": "https://montygarage.cz/",
+    "image": "https://montygarage.cz/images/logo-original.jpg",
+    "logo": "https://montygarage.cz/images/logo-original.jpg",
+    "telephone": "+420774889983",
+    "email": "montygarage@email.cz",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vrančice 5",
+      "postalCode": "262 31",
+      "addressLocality": "Vrančice",
+      "addressCountry": "CZ"
+    },
+    "areaServed": [
+      "Příbram",
+      "Milín",
+      "Středočeský kraj"
+    ],
+    "sameAs": [
+      "https://www.instagram.com/montygarage.cz/",
+      "https://www.facebook.com/people/Monty-Garage/61578442086450/"
+    ],
+    "description": "Monty Garage je motoservis v okolí Příbrami se zaměřením na MX a Enduro. Provádíme GO motoru a generální opravy motorů, opravy a repase tlumičů, servis podvozku, centrování klikových hřídelí a kliky, servis brzd a spojek, pneuservis, diagnostiku, přípravu motocyklů na závody a STK, odtahy a dovozy vozidel."
+  }
+  </script>
+<!-- KONEC TECHNICKÉ ČÁSTI HEAD -->
+</head>
+<body>
+<header class="site-header" id="top">
+<div class="header-inner">
+<a aria-label="Monty Garage – domů" class="brand" href="#top">
+<img alt="Logo Monty Garage" decoding="async" loading="lazy" src="images/logo-original.webp"/>
+</a>
+<button aria-expanded="false" aria-label="Otevřít menu" class="menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Hlavní navigace" class="main-nav">
+<a href="#top">Domů</a>
+<a href="#sluzby">Služby</a>
+<a href="#prace">Naše práce</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+<div class="header-contact">
+<a aria-label="Zavolat 774 889 983" href="tel:+420774889983">☎ <span>774 889 983</span></a>
+<a href="mailto:montygarage@email.cz">✉ <span>montygarage@email.cz</span></a>
+<a aria-label="Instagram Monty Garage" class="instagram-link" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+</a>
+</div>
+</div>
+</header>
+<main>
+<section aria-labelledby="hero-title" class="hero">
+<div class="hero-text-wrap">
+<div class="hero-copy">
+<p class="eyebrow">Monty Garage</p>
+<h1 id="hero-title">Opravy motorek<br/>a tlumičů</h1>
+<p class="hero-subtitle">Servis <span>•</span> Odtahy <span>•</span> Dovozy automobilů</p>
+<div class="hero-actions">
+<a class="button button-primary" href="#poptavka">Odeslat poptávku</a>
+<a class="button button-secondary" href="tel:+420774889983">Zavolat</a>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="hero-photo">
+<img alt="" fetchpriority="high" src="images/hero.webp"/>
+</div>
+</section>
+<section aria-label="Hlavní služby" class="quick-services">
+<div class="quick-grid">
+<article><strong>Servis motocyklů</strong><span>Kompletní péče o váš stroj</span></article>
+<article><strong>Repase tlumičů</strong><span>Profesionální servis tlumičů</span></article>
+<article><strong>Servis automobilů</strong><span>Diagnostika a opravy</span></article>
+<article><strong>Odtahy a dovozy</strong><span>Rychle a spolehlivě</span></article>
+<article><strong>Férové jednání</strong><span>Poctivá práce a lidský přístup</span></article>
+</div>
+</section>
+<section class="section" id="sluzby">
+<div class="section-heading">
+<p class="eyebrow">Co umíme</p>
+<h2>Servis motorek i automobilů</h2>
+<p>Od běžné údržby až po náročnější opravy. Rozsah prací a termín vždy domluvíme předem.</p>
+</div>
+<div class="service-cards">
+<article class="service-card beta-card">
+<div class="service-image left">
+<img alt="Servis motocyklů" decoding="async" loading="lazy" src="images/motorcycle.webp"/>
+</div>
+<div class="service-content">
+<h3>Motorky</h3>
+<ul>
+<li>Kompletní servis motocyklů</li>
+<li>Opravy a repase tlumičů</li>
+<li>Servis motorů a převodovek</li>
+<li>Centrování klikových hřídelí</li>
+<li>Příprava MX/Enduro na závody</li>
+<li>Specialisté na motorky Beta</li>
+<li>Brzdy, spojky a podvozek</li>
+<li>Pneuservis</li>
+<li>Diagnostika závad</li>
+<li>Příprava na STK</li>
+</ul>
+</div>
+</article>
+<article class="service-card audi-card">
+<div class="service-image right">
+<img alt="Servis automobilů" decoding="async" loading="lazy" src="images/car.webp"/>
+</div>
+<div class="service-content">
+<h3>Automobily</h3>
+<ul>
+<li>Servis vozidel</li>
+<li>Diagnostika</li>
+<li>Brzdy a rozvody</li>
+<li>Podvozky a spojky</li>
+<li>Výměny oleje</li>
+<li>Odtahy</li>
+<li>Dovozy automobilů</li>
+<li>Příprava na STK</li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section section-dark" id="prace">
+<div class="section-heading">
+<p class="eyebrow">Naše práce</p>
+<h2>Podívejte se na naše realizace</h2>
+</div>
+<div class="work-grid">
+<a class="work-card" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+<img alt="Repase tlumičů" decoding="async" loading="lazy" src="images/repastlumicu.webp"/>
+<strong>Opravy a repase tlumičů</strong>
+</a>
+<a class="work-card" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+<img alt="Enduro servis" decoding="async" loading="lazy" src="images/enduroservis.webp"/>
+<strong>Kompletní servis motocyklů</strong>
+</a>
+<a class="work-card" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+<img alt="Opravy motorů" decoding="async" loading="lazy" src="images/motor.webp"/>
+<strong>Opravy motorů</strong>
+</a>
+<a class="work-card" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+<img alt="Výměny rozvodů" decoding="async" loading="lazy" src="images/rozvody.webp"/>
+<strong>Výměny rozvodů</strong>
+</a>
+</div>
+<div class="instagram-cta-wrap">
+<a class="button button-secondary instagram-cta" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+      Zobrazit více prací na Instagramu
+    </a>
+</div>
+</section>
+<article class="form-box" id="poptavka">
+<p class="eyebrow">Poptávka</p>
+<h2>Napište nám</h2>
+<form id="contact-form">
+<div class="form-row">
+<label>Jméno a příjmení<input autocomplete="name" name="name" required=""/></label>
+<label>Telefon<input autocomplete="tel" name="phone" type="tel"/></label>
+<label>E-mail<input autocomplete="email" name="email" type="email"/></label>
+</div>
+<div class="form-row">
+<label>Typ vozidla<select name="vehicle"><option>Motorka</option><option>Automobil</option><option>Jiné</option></select></label>
+<label>Značka<input name="brand"/></label>
+<label>Model<input name="model"/></label>
+</div>
+<label>Popis závady / požadavku<textarea name="message" required="" rows="5"></textarea></label>
+<button class="button button-primary form-submit" type="submit">Odeslat poptávku</button>
+<p class="form-note">Po kliknutí se otevře váš e-mail s předvyplněnou zprávou.</p>
+</form>
+</article>
+<section class="contact-section" id="kontakt">
+<div>
+<p class="eyebrow">Kontakt</p>
+<h2>Kde nás najdete</h2>
+<address>
+<a href="https://maps.google.com/?q=Vran%C4%8Dice+5,+262+31+Mil%C3%ADn" rel="noopener noreferrer" target="_blank">Vrančice 5, 262 31 Milín</a>
+<a href="tel:+420774889983">774 889 983</a>
+<a href="mailto:montygarage@email.cz">montygarage@email.cz</a>
+<a class="contact-instagram" href="https://www.instagram.com/montygarage.cz/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+<span>@montygarage.cz</span>
+</a>
+</address>
+</div>
+<a class="map-card" href="https://maps.google.com/?q=Vran%C4%8Dice+5,+262+31+Mil%C3%ADn" rel="noopener noreferrer" target="_blank">
+<span>Vrančice 5<br/>262 31 Milín</span>
+</a>
+<div class="contact-brand">
+<img alt="Monty Garage" decoding="async" loading="lazy" src="images/logo-original.webp"/>
+<p>Servis motorek, automobilů, opravy tlumičů, odtahy a dovozy.</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<span>© 2026 Monty Garage</span>
+<span>montygarage.cz</span>
+</footer>
+<nav aria-label="Rychlé kontakty" class="mobile-bar">
+<a href="tel:+420774889983">Zavolat</a>
+<a href="https://maps.google.com/?q=Vran%C4%8Dice+5,+262+31+Mil%C3%ADn" rel="noopener noreferrer" target="_blank">Navigace</a>
+<a href="#poptavka">Poptávka</a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>
